@@ -31,6 +31,7 @@ header {
 	/* Regras de layout*/
 	padding: 2%;
 	width: 100%;
+	
 
 
 }
@@ -42,6 +43,10 @@ header img {
 }
 
 /* Flexbox dentro do flexbox pra organizar os itens dentro da ul*/
+nav{
+	position:relative ;
+}
+
 nav ul {
 	display: flex;
 	flex-direction: row;
@@ -49,30 +54,35 @@ nav ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
-
 }
 
 /*Espaçamento do li */
 nav li {
-
 	padding-right: 1em;
-	font-size: 1.3rem;
+	font-size: 1.3rem;	
 }
 
 nav li:last-child {
 	margin-right: 0;
-	padding-right: 10px;
+	padding-right: 6em;
 	/* Remova a margem direita do último item */
 }
 
 /* div em volta do body excluindo o header */
-
 main {
 	margin: 0 auto;
 	/* Centraliza o conteúdo */
 	padding: 0 5%;
 	/* Adiciona margem de sangria nas laterais */
 	max-width: 85vw;
+}
+
+/*Deixando a navegação melhor, via anchor do navbar*/
+
+
+section {
+	margin-top: 10vh; /* Adicione uma margem superior de 10vh */
+	padding-top: 15vw;
 }
 
 /* Mudando as config da fonte */
@@ -120,7 +130,7 @@ p {
 	flex-direction: row;
 	justify-content: space-around;
 }
-
+/*Ajustando a tabela */
 table {
 	font-family: Arial, Helvetica, sans-serif;
 	width: 100%;
