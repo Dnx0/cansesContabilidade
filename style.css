@@ -16,13 +16,20 @@ body {
 
 }
 
+/*Mudandoo comportamento de navegação do navbar*/
+html{
+	scroll-behavior: smooth;
+	scroll-padding-top: 15em;
+}
+
 /* Mudando o header para Flex-box para alinhar o nav e o logo da empresa dentro do header. Também colocando os atributos position fixed, z-idex para deixar o navbar sempre no topo */
 header {
 	/*Organizando os itens dentro do header */
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	background-color: whitesmoke;
+	background-color: rgba(174, 201, 224, 0.8);
+	backdrop-filter: blur(25px);
 	align-items: center;
 	/*Deixando o header sempre no topo, mesmo quando rola a página */
 	position: fixed;
@@ -77,14 +84,6 @@ main {
 	max-width: 85vw;
 }
 
-/*Deixando a navegação melhor, via anchor do navbar*/
-
-
-section {
-	margin-top: 10vh; /* Adicione uma margem superior de 10vh */
-	padding-top: 15vw;
-}
-
 /* Mudando as config da fonte */
 h2 {
 	font-family: Roboto Slab;
@@ -105,7 +104,19 @@ p {
 	font-size: 14px;
 	font-family: Poppins;
 }
+/* arrumando o tamanho da sections*/
 
+section{
+	min-height: 70vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+/* Arrumando a primeira section para não tampada pelo header*/
+#home {
+	padding-top: 2em;
+	
+}
 .fotos {
 	display: flex;
 	flex-direction: column;
