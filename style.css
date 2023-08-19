@@ -3,7 +3,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@600&family=Dosis:wght@800&family=Poppins&display=swap');
 
+/*Cores*/
+:root {
+    --nav: rgba(174, 201, 224, 0.8);
+	--background: #1b1bc2
+}
+
 /* Reset */
+
 body {
 	margin: 0px;
 	padding: 0px;
@@ -12,9 +19,12 @@ body {
 }
 
 body {
-	background-color: lightgrey;
+	background-image: url(img/fundo.png);
+	background-size: cover;	
+	color: whitesmoke;
 
 }
+
 
 /*Mudandoo comportamento de navegação do navbar*/
 html{
@@ -28,7 +38,7 @@ header {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	background-color: rgba(174, 201, 224, 0.8);
+	background-color: var(--nav);
 	backdrop-filter: blur(25px);
 	align-items: center;
 	/*Deixando o header sempre no topo, mesmo quando rola a página */
@@ -119,7 +129,7 @@ section{
 }
 .fotos {
 	display: flex;
-	flex-direction: column;
+	flex-direction: column-reverse;
 	align-items: center;
 	max-width: 100vw;
 }
@@ -152,7 +162,7 @@ table {
 }
 
 table tr:nth-child(even) {
-	background-color: #f2f2f2;
+	background-color: var(--nav);
 }
 
 table tr:hover {
@@ -169,7 +179,7 @@ table th {
 
 a {
 	text-decoration: none;
-	color: black;
+	color: whitesmoke;
 }
 
 a:hover {
