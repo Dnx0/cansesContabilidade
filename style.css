@@ -111,7 +111,7 @@ h4 {
 }
 
 p {
-	font-size: 14px;
+	font-size: 18px;
 	font-family: Poppins;
 }
 /* arrumando o tamanho da sections*/
@@ -126,6 +126,10 @@ section{
 #home {
 	padding-top: 2em;
 	
+}
+
+#historia{
+	background-color: black;
 }
 .fotos {
 	display: flex;
@@ -149,7 +153,12 @@ section{
 #clientesParceiros {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-between;
+	background-color: whitesmoke;
+}
+
+article a img{
+	padding: 1em;
 }
 /*Ajustando a tabela */
 table {
@@ -179,14 +188,17 @@ table th {
 
 a {
 	text-decoration: none;
+	font-family: Roboto Slab;
+	font-size: 1.2em;
 	color: whitesmoke;
 }
 
 a:hover {
-	font-size: 1.2em;
+	font-size: 1.4em;
 }
 
 footer {
-	background-color: #fff;
+	background-color: var(--nav);
+	font-size: 1.4em;
 	text-align: center;
 }
