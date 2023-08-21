@@ -135,6 +135,7 @@ section{
 	background-color: black;
 	margin-top: 5rem;
 }
+/*Container imagem dos funcionarios*/
 .fotos {
 	display: grid;
 	grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -148,13 +149,13 @@ section{
 	height: 300px;
 	width: auto;
 }
-
+/*Empresas parceiras*/
 .parceiros {
 	width: 150px;
 	height: auto;
 
 }
-
+/*Cointainer das empresas parceiras*/
 #clientesParceiros {
 	display: flex;
 	flex-direction: row;
@@ -181,7 +182,7 @@ table tr:nth-child(even) {
 }
 
 table tr:hover {
-	background-color: #ddd;
+	background-color: var(--background);
 }
 
 table th {
@@ -192,6 +193,7 @@ table th {
 	color: white;
 }
 
+/*Mudando configurações dos links*/
 a {
 	text-decoration: none;
 	font-family: Roboto Slab;
@@ -202,9 +204,61 @@ a {
 a:hover {
 	font-size: 1.4em;
 }
+/*Estilizando o formulário*/
 
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: whitesmoke;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+/*Fim do formulario*/
+
+section h3{
+	text-align: center;
+}
 footer {
 	background-color: var(--background);
 	font-size: 1.4em;
 	text-align: center;
+}
+
+/*Adicionando Media Query*/
+@media (max-width: 710px) {
+	.fotos{
+		display:flex;
+		flex-direction: column-reverse;
+	}
+	
+	#clientesParceiros{
+		flex-direction: column;
+	}
 }
